@@ -4,7 +4,7 @@ import ProjectList from '@comps/projects/ProjectList'
 
 export default function ContentBody({page}) {
   return (
-    <div className="container min-h-50 w-75 mx-auto my-3 align-items-center text-center p-5">
+    <div className="container min-h-50 mx-auto my-3 align-items-center text-center p-5">
         <p>
             {page.desc}
         </p>

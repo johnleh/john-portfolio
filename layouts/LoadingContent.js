@@ -1,8 +1,12 @@
+import HeaderNavBar from '@comps/header/HeaderNavBar'
 import ContentLayout from '@layouts/ContentLayout'
 import React from 'react'
 
 export default function LoadingScreen() {
   return (
-    <ContentLayout pageTitle="Loading"/>
+    <>
+      <HeaderNavBar/>
+      <ContentLayout pageTitle="Loading"/>
+    </>
   )
 }
