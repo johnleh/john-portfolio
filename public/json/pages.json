@@ -1,0 +1,30 @@
+[
+   {
+        "title": "Home",
+        "route": "/",
+        "inNavBar": true
+    },{
+        "title": "About",
+        "route": "/about",
+        "inNavBar": true,
+        "subtitle" : "Who I am!"
+    },{
+        "title": "Projects",
+        "route": "/projects",
+        "inNavBar": true,
+        "subtitle" : "What I've Done!"
+
+    },{
+        "title": "Contact",
+        "subtitle" : "How To Reach Me!",
+        "route": "/contact",
+        "inNavBar": true,
+        "desc" : "Feel free to check out any of my links!"
+    },{
+        "title": "404 Error",
+        "route": "/404"
+    },{
+        "title": "500 Error",
+        "route": "/500"
+    }
+]

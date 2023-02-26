@@ -1,12 +1,13 @@
-import Link from 'next/link'
+import React from 'react'
 import DefaultLayoutNavBar from '@layouts/DefaultLayoutNavBar';
 import ContentLayout from '@layouts/ContentLayout';
-export default function Home() {
+
+export default function About() {
   return (
-    <ContentLayout pageTitle="Home"/>
+    <ContentLayout pageTitle="About"/>
   )
 }
 
-Home.getLayout = function(page) {
+About.getLayout = function(page) {
   return <DefaultLayoutNavBar>{page}</DefaultLayoutNavBar>;
 };
