@@ -4,10 +4,6 @@ import 'bootstrap/dist/css/bootstrap.css'
 
 function MyApp({ Component, pageProps }) {
 
-  const renderCorrectLayout = Component.getLayout ||
-  function (page) {
-    return <Layout>{page}</Layout>;
-  };
   if(Component.getLayout) {
     return Component.getLayout(<Component {...pageProps} />)
   } else {
