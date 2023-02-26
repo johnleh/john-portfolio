@@ -4,9 +4,6 @@ import React from 'react'
 
 export default function LoadingScreen() {
   return (
-    <>
-      <HeaderNavBar/>
-      <ContentLayout pageTitle="Loading"/>
-    </>
+    <h1>Loading</h1>
   )
 }
