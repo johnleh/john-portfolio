@@ -3,7 +3,7 @@ import HeaderNavBar from './HeaderNavBar'
 import Link from 'next/link'
 export default function MainHeader() {
     const [currentTime, setCurrentTime] = useState("9:30am")
-    console.log(Intl.DateTimeFormat().resolvedOptions().timeZone)
+    //console.log(Intl.DateTimeFormat().resolvedOptions().timeZone)
 
   return (
     <div className="">
