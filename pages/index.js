@@ -3,7 +3,7 @@ import DefaultLayoutNavBar from '@layouts/DefaultLayoutNavBar';
 import ContentLayout from '@layouts/ContentLayout';
 export default function Home() {
   return (
-    <ContentLayout pageTitle="Home"/>
+    <ContentLayout pageTitle="Welcome"/>
   )
 }
 

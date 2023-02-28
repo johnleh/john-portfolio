@@ -46,7 +46,7 @@ export default function ContentLayout({pageTitle,projectId}) {
   }
 
   return (
-    <div className=" min-vh-75 container pt-3 border border-top-0 border-dark">
+    <div className="">
       <ContentTitle  
                     page={page}
                     projectId={projectId}/>

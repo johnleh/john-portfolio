@@ -1,6 +1,6 @@
 import React from 'react'
-import LinkList from '@comps/LinkList'
-
+import LinkListUrl from '@comps/LinkListUrl'
+import Link from 'next/link'
 export default function ContactUrlList() {
     const contactLinks = [
         {
@@ -13,11 +13,10 @@ export default function ContactUrlList() {
 
     return (
         contactLinks.map((contactLink,index) => (
-            <div key={index}>
-                <LinkList
-                    text={contactLink.title}
-                    link={contactLink.link}/>
-            </div>
+            <LinkListUrl 
+                text={contactLink.title}
+                link={contactLink.link}
+                outsideUrl={true}/>
         ))
     )
 }

@@ -11,7 +11,7 @@ export default function HeaderNavBar() {
     const pageData = JSON.parse(data.data);
 
     return (
-        <div className="container min-vh-10">
+        <div className="">
             <div className="row align-items-center text-center" style={{height: 80}}>
                 {pageData.map((page) => ( 
                     page.inNavBar ?

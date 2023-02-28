@@ -6,16 +6,16 @@ export default function HeaderNavButton({page}) {
     
     const route = useRouter();
     const isCurrentPage = route.asPath == page.route
-    let containerClassName = "col-3 h-100 border-dark pt-3"
-    containerClassName += page.title == "Contact" ? " border-bottom " : " border-bottom "
-    containerClassName += isCurrentPage ? " border border-bottom-0 " : " "
+    let containerClassName = "col-4 h-100 border-dark border-bottom border-start"
+    containerClassName += isCurrentPage ? " border border-bottom-0 border-top-0 border-end-0" : " "
+    containerClassName += page.title == "Contact" ? " border-bottom border-end" : " border-bottom "
 
     return (
         <div className={containerClassName}>
-            <Link href={page.route}>
-                <h2>
+            <Link className={"link text-center"} href={page.route}>
+                <h3 className={"d-flex align-items-center justify-content-center h-100 align-middle"}>
                     {page.title}
-                </h2>
+                </h3>
             </Link>
         </div>
     )

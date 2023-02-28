@@ -1,10 +1,17 @@
 [
     {
         "title": "This Portfolio",
-        "gitUrl" : "https://github.com/johnleh/john-portfolio"
+        "gitUrl" : "https://github.com/johnleh/john-portfolio",
+        "p1" : "For my portfolio, I used the Next.js framework to build a fast, efficient, and SEO-friendly website.",
+        "p2" : "Next.js allows me to create server-side rendered pages, which improved the website's performance and provided a seamless user experience. Using framework's built-in support for React, allowed me to write modular and reusable components that made development faster and more scalable.",
+        "p3" : "Finally, I utilized Vercel to host this website. The combination of Next.js and Vercel allowed me to create a high-quality website that meet my design and performance goals, while minimizing development time and effort."
     },
     {
         "title": "I Apply Math in My World",
-        "gitUrl" : "https://github.com/luzeli29/iapplymath"
+        "gitUrl" : "https://github.com/luzeli29/iapplymath",
+        "p1" : "\"I Apply Math In My World\" is an educational website aimed at reducing math anxiety among Spanish-speaking ESO students in grades 3-5.",
+        "p2" : "To create a seamless user experience, I utilized the Next.js framework as the front-end, which allowed for efficient server-side rendering of pages and quick navigation. The back-end was powered by a MongoDB database, which allowed for fast and easy data storage and retrieval.",
+        "p3" : "In addition to providing educational resources and tips for managing math anxiety, the website also included a login feature to access personalized content and multiple data collection features to track user progress and provide personalized feedback. To achieve this, I utilized RestAPI design, which provided a standardized way of communicating between the front-end and back-end systems.",
+        "p4" : "Overall, \"I Apply Math In My Own World\" is a powerful tool for helping Spanish-speaking ESO students build confidence in their math skills and reduce math anxiety."
     }
 ]
