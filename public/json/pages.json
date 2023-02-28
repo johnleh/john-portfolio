@@ -12,8 +12,8 @@
         "inNavBar": true,
         "subtitle" : "Who I am!",
         "p1" : "I am a full-stack software engineer with a passion for web development.",
-        "p2" : "My expertise in front-end technologies such as Java, Javascript, React and Next.js, back-end technologies such as SQL and MongoDB, and API design has enabled me to create websites that provide complex services in an easily accessible format.",
-        "p3" : "I'm always striving to learn and grow, and ready to take on any new projects.",
+        "p2" : "My knowledge in front-end technologies such as Java, Javascript, React and Next.js, back-end technologies such as SQL and MongoDB, and Restful API design has enabled me to create websites that provide complex services in an easily accessible format.",
+        "p3" : "I am always striving to learn and grow, and am always ready to take on any new projects.",
         "p4" : "Feel free to reach out if you have any questions!"
     },{
         "title": "Projects",
@@ -22,7 +22,7 @@
         "subtitle" : "What I've Done!",
         "p1" : "Here, you'll find a collection of my most recent projects.",
         "p2" : "Take your time to explore each one, and don't hesitate to reach out if you have any questions or feedback.",
-        "p3" : "I hope these projects inspire and excite you as much as they do me!"
+        "p3" : "I hope these projects inspire and excites you as much as they do me!"
 
     },{
         "title": "Contact",

@@ -12,7 +12,7 @@ export default function HeaderNavBar() {
 
     return (
         <div className="">
-            <div className="row align-items-center text-center" style={{height: 80}}>
+            <div role="group" className="row align-items-center text-center" style={{height: 80}}>
                 {pageData.map((page) => ( 
                     page.inNavBar ?
                     <HeaderNavButton key={page.route} page={page}/>
