@@ -8,7 +8,7 @@ export default function ContentTitle({page, projectId}) {
   const isProject = page.isProject
 
   return (
-    <div className="mt-2 w-75 mx-auto align-items-center text-center">
+    <div className="mt-2 w-100 mx-auto align-items-center text-center">
         <div className="row mx-auto">
             <div className="col-2 d-flex align-items-center justify-content-center h-100 align-middle">
             {prevRoute ? 

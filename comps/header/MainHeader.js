@@ -15,7 +15,7 @@ export default function MainHeader() {
                     <h2>John Le Houillier's Portfolio</h2>
                 </Link>
             </div>
-            <div className=" border-dark d-flex align-items-center justify-content-center col-2 text-center py-2">
+            <div className=" d-flex align-items-center justify-content-center col-2 text-center py-2">
                 <h2></h2>
             </div>
         </div>

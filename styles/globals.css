@@ -1,15 +1,15 @@
 html,
 body {
-    width: 100%;
-    height: 100%;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
     font-size: large;
     font-weight: bolder;
     color:#242038;
-    background: rgb(255,252,182);
-    background: linear-gradient(49deg, rgba(255,252,182,1) 0%, rgba(255,180,44,1) 100%);      
     padding: 0;
     margin: 0;
     font-family: Futura,Trebuchet MS,Arial,sans-serif; 
+
 }
 
 .min-vh-75 {
