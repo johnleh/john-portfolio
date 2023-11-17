@@ -14,6 +14,7 @@ export default function ContactUrlList() {
     return (
         contactLinks.map((contactLink,index) => (
             <LinkListUrl 
+                key={index}
                 text={contactLink.title}
                 link={contactLink.link}
                 outsideUrl={true}/>

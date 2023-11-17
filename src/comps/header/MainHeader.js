@@ -11,7 +11,7 @@ export default function MainHeader() {
             </div>
             <div className="col-8 d-flex align-items-center justify-content-center py-2">
                 <Link className="text-white link" aria-label="John Le Houillier's Portfolio, Home   " role="button" href="/">
-                    <h2>John Le Houillier's Portfolio</h2>
+                    <h2>John Le Houillier&apos;s Portfolio</h2>
                 </Link>
             </div>
             <div className=" d-flex align-items-center justify-content-center col-2 text-center py-2">

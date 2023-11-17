@@ -33,8 +33,6 @@ export default function PageContent({pageData,isProject, children}) {
             const projectId = pageData.projectId
             const prevRoute = projectId >= 0 ? projectId != 0 ? "/projects/" + (parseInt(projectId) - 1) : null : null
             const nextRoute = projectId >= 0 ? projectId != ProjectData.length - 1 ? "/projects/" + (parseInt(projectId) + 1) : null : null
-            console.log(prevRoute)
-            console.log(nextRoute)
 
             return (
                 <>

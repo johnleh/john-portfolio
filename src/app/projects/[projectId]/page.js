@@ -1,5 +1,8 @@
+"use client";
 import PageContent from '@comps/PageContent'
 import ProjectData from '@utils/ProjectData'
+import { useRouter } from 'next/navigation'
+
 
 const pageData = {
   "title": "Projects",
@@ -14,8 +17,15 @@ const pageData = {
 
 export default function Projects({ params }) {
   const projectId = params.projectId
+  const router = useRouter()
+
+  if (projectId < 0 || projectId >= ProjectData.length) {
+    router.push('/projects')
+    return <></>
+  }
   let pageData = ProjectData[projectId]
   pageData.projectId = projectId
+
   return (
       <PageContent pageData={pageData} isProject={true}> 
       </PageContent>
