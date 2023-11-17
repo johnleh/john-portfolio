@@ -18,13 +18,14 @@ const pageData = {
 export default function Projects({ params }) {
   const projectId = params.projectId
   const router = useRouter()
-
-  if (projectId < 0 || projectId >= ProjectData.length) {
+  let pageData
+  try {
+    pageData = ProjectData[projectId]
+    pageData.projectId = projectId
+  } catch {
     router.push('/projects')
     return <></>
   }
-  let pageData = ProjectData[projectId]
-  pageData.projectId = projectId
 
   return (
       <PageContent pageData={pageData} isProject={true}> 
