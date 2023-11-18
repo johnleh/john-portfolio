@@ -1,6 +1,7 @@
 "use client";
+import React from 'react';
 import PageContent from '@comps/PageContent'
-import ProjectData from '@utils/ProjectData'
+import ProjectData from 'src/app/projects/ProjectData'
 import { useRouter } from 'next/navigation'
 
 

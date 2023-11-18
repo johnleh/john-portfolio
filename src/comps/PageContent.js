@@ -1,4 +1,4 @@
-import ProjectData from "@utils/ProjectData"
+import ProjectData from "src/app/projects/ProjectData"
 import Link from "next/link"
 export default function PageContent({pageData,isProject, children}) {
 

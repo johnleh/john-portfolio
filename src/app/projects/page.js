@@ -1,6 +1,6 @@
 import PageContent from '@comps/PageContent'
-import ProjectList from '@comps/projects/ProjectList'
-import ProjectData from '@utils/ProjectData'
+import ProjectList from 'src/app/projects/ProjectList'
+import ProjectData from 'src/app/projects/ProjectData'
 
 const pageData = {
   "title": "Projects",
