@@ -6,10 +6,10 @@ import { useRouter } from 'next/navigation'
 
 
 export default function Projects({ params }) {
-  const projectId = params.projectId
   const router = useRouter()
   let pageData
   try {
+    const projectId = params.projectId
     pageData = ProjectData[projectId]
     pageData.projectId = projectId
   } catch {
