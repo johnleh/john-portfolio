@@ -1,6 +1,4 @@
-import React from 'react'
 import LinkListUrl from 'src/comps/LinkListUrl'
-import Link from 'next/link'
 export default function ContactUrlList() {
     const contactLinks = [
         {

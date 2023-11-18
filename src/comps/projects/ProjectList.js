@@ -1,4 +1,3 @@
-import React from 'react'
 import LinkListUrl from 'src/comps/LinkListUrl'
 
 export default function ProjectList({projects}) {

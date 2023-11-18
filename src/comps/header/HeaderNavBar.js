@@ -1,4 +1,3 @@
-import React from 'react'
 import HeaderNavButton from './HeaderNavButton'
 
 export default function HeaderNavBar() {
