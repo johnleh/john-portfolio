@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import PageContent from '@comps/PageContent'
+import { redirect } from 'next/navigation'
 
 const pageData = {
     "title": "Welcome",
@@ -12,7 +13,5 @@ const pageData = {
 
 
 export default function Home() {
-  return (
-    <PageContent pageData={pageData}/>
-  )
+  redirect('/about')
 }

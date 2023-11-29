@@ -5,12 +5,12 @@ const pageData = {
   "route": "/404",
   "inNavBar": true,
   "subtitle" : "Page Not Found!",
-  "p1" : "The page you are looking for does not exist. Click my name at the top to return to the home page.",
+  "p1" : "The page you are looking for does not exist.",
 }
 
 export default function NotFound() {
   return (
-    <PageContent pageData={"404"}/>
+    <PageContent pageData={pageData}/>
   )
 }
 

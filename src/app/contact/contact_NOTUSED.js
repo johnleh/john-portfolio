@@ -1,5 +1,5 @@
 import PageContent from '@comps/PageContent'
-import ContactUrlList from 'src/app/contact/ContactUrlList'
+import ContactUrlList from 'src/app/about/ContactUrlList'
 
 const pageData = {
   "title": "Contact",
