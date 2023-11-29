@@ -3,12 +3,12 @@ import React from 'react'
 import Link from 'next/link'
 import {usePathname } from 'next/navigation'
 
-export default function HeaderNavButton({pageName,isMiddle}) {
+export default function HeaderNavButton({pageName,needsEndBorder}) {
     
     const pageRoute =  "/" + pageName.toLowerCase()
     const isCurrentPage = usePathname() == pageRoute
-    let containerClassName = " col-4 h-100 border-dark "
-    if(isMiddle) containerClassName += " border-start border-end "
+    let containerClassName = " col-6 h-100 border-dark "
+    if(needsEndBorder) containerClassName += " border-end "
     if(!isCurrentPage) containerClassName += " border-bottom "
 
     return (
