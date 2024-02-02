@@ -9,7 +9,7 @@ const pageData = {
   "subtitle" : "What I've Done!",
   "p1" : "Here, you'll find a collection of my most recent projects.",
   "p2" : "Take your time to explore each one, and don't hesitate to reach out if you have any questions or feedback.",
-  "p3" : "I hope these projects inspire and excites you as much as they do me!"
+  "p3" : "I hope these projects inspire you as much as they do me!"
 
 }
 

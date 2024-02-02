@@ -14,4 +14,9 @@ const pageData = {
 
 export default function Home() {
   redirect('/about')
+  return (
+    <div>
+      
+    </div>
+    )
 }
