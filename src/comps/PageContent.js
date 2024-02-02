@@ -65,7 +65,7 @@ export default function PageContent({pageData,isProject, children}) {
 
     const RenderContentBody = () => {
         return (
-            <div className="align-items-center text-center py-4 w-75 mx-auto">
+            <div className="align-items-center text-center py-4 col-10 mx-auto">
                 {pageData.p1 ? <p className="">{pageData.p1}</p> : null}
                 {pageData.p2 ? <p className="">{pageData.p2}</p> : null}
                 {pageData.p3 ? <p className="">{pageData.p3}</p> : null}
