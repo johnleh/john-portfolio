@@ -1,26 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap");
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --background: #10211d;
+  --foreground: #edf2ef;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-background-primary: #f8fcfa;
+  --color-background-secondary: #eef7f3;
+  --color-border-primary: #185a49;
+  --color-border-tertiary: #5dcaa5;
+  --color-text-primary: #0c221d;
+  --color-text-secondary: #2b4a42;
+  --color-text-tertiary: #4f776c;
+  --teal-strong: #0f6e56;
+  --teal-pale: #e1f5ee;
+  --teal-ink: #085041;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "IBM Plex Sans", var(--font-sans), sans-serif;
+  margin: 0;
+}
+
+.port-page {
+  min-height: 100dvh;
+  padding: 1.5rem;
+  background-image:
+    radial-gradient(circle at 15% 15%, rgba(93, 202, 165, 0.16), transparent 30%),
+    radial-gradient(circle at 85% 85%, rgba(15, 110, 86, 0.1), transparent 40%);
+}
+
+.port-wrap {
+  border: 1px solid var(--color-border-primary);
+  background: var(--color-background-primary);
+  max-width: 980px;
+  margin: 0 auto;
+  box-shadow: 10px 10px 0 rgba(15, 110, 86, 0.2);
+}
+
+.port-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  border-bottom: 1px solid var(--color-border-primary);
+}
+
+.port-nav-name {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  letter-spacing: 0.04em;
+}
+
+.port-nav-links {
+  display: flex;
+  gap: 0;
+}
+
+.port-nav-link {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  padding: 4px 14px;
+  border-left: 1px solid var(--color-border-tertiary);
+  letter-spacing: 0.05em;
+}
+
+.port-nav-link.active {
+  color: var(--teal-strong);
+}
+
+.port-hero {
+  padding: 2rem 1.5rem;
+  border-bottom: 1px solid var(--color-border-primary);
+}
+
+.port-status {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 11px;
+  color: var(--teal-strong);
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.port-status-dot {
+  width: 7px;
+  height: 7px;
+  background: var(--teal-strong);
+  display: inline-block;
+}
+
+.port-hero h1 {
+  font-family: "IBM Plex Sans", var(--font-sans), sans-serif;
+  font-size: clamp(2rem, 4.5vw, 2.2rem);
+  font-weight: 500;
+  margin: 0 0 0.75rem;
+  line-height: 1.15;
+  color: var(--color-text-primary);
+}
+
+.port-hero h1 em {
+  font-style: normal;
+  color: var(--teal-strong);
+}
+
+.port-hero-sub {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  max-width: 500px;
+  line-height: 1.6;
+  margin: 0 0 1.5rem;
+}
+
+.port-page-hero {
+  background:
+    linear-gradient(180deg, rgba(225, 245, 238, 0.75), rgba(248, 252, 250, 0));
+}
+
+.port-page-intro {
+  max-width: 620px;
+}
+
+.port-cta-row {
+  display: flex;
+  gap: 0;
+  flex-wrap: wrap;
+}
+
+.port-btn {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+  padding: 8px 16px;
+  border: 1px solid var(--color-border-primary);
+  background: var(--color-background-primary);
+  color: var(--color-text-primary);
+  cursor: pointer;
+  text-decoration: none;
+  letter-spacing: 0.04em;
+  margin-right: -1px;
+  margin-bottom: -1px;
+}
+
+.port-btn.primary {
+  background: var(--teal-strong);
+  border-color: var(--teal-strong);
+  color: var(--teal-pale);
+}
+
+.port-btn.social {
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease;
+  background-image: radial-gradient(circle at 50% 50%, var(--teal-strong) 0%, transparent 0%);
+  background-size: 200% 200%;
+  background-position: center;
+  transition: background-size 0.4s ease, color 0.3s ease;
+}
+
+.port-btn.social:hover {
+  background-image: radial-gradient(circle at 50% 50%, var(--teal-strong) 100%, var(--teal-strong) 100%);
+  background-size: 300% 300%;
+  color: var(--teal-pale);
+  border-color: var(--teal-strong);
+}
+
+.port-section {
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--color-border-primary);
+}
+
+.port-section-label {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  color: var(--color-text-tertiary);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--color-border-tertiary);
+}
+
+.port-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+}
+
+.port-skill {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 11px;
+  padding: 4px 12px;
+  border: 1px solid var(--color-border-tertiary);
+  color: var(--color-text-secondary);
+  background: var(--color-background-secondary);
+  margin-right: -1px;
+  margin-bottom: -1px;
+  letter-spacing: 0.03em;
+}
+
+.port-project-card {
+  border: 1px solid var(--color-border-primary);
+  overflow: hidden;
+}
+
+.port-project-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.port-proj-images {
+  display: flex;
+  justify-content: center;
+  gap: 1px;
+  border-bottom: 1px solid var(--color-border-tertiary);
+  background: var(--color-background-secondary);
+}
+
+.port-proj-image {
+  position: relative;
+  flex: 0 1 480px;
+  min-width: 0;
+  height: 320px;
+  background: var(--color-background-secondary);
+  overflow: hidden;
+}
+
+.port-proj-image-label {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 11px;
+  color: var(--teal-ink);
+  letter-spacing: 0.08em;
+}
+
+.port-proj-body {
+  padding: 1.25rem;
+}
+
+.port-proj-meta {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 10px;
+  color: var(--color-text-tertiary);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.port-proj-title {
+  font-family: "IBM Plex Sans", var(--font-sans), sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  margin: 0 0 0.6rem;
+}
+
+.port-proj-desc {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin: 0 0 1rem;
+}
+
+.port-highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 1rem;
+}
+
+.port-highlight {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 12px;
+  font-family: "IBM Plex Mono", monospace;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.port-highlight-mark {
+  color: var(--teal-strong);
+  flex-shrink: 0;
+  font-size: 12px;
+}
+
+.port-proj-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  margin-bottom: 1rem;
+}
+
+.port-tag {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 10px;
+  padding: 3px 10px;
+  background: var(--teal-pale);
+  color: var(--teal-ink);
+  border: 1px solid var(--color-border-tertiary);
+  margin-right: -1px;
+  letter-spacing: 0.04em;
+}
+
+.port-proj-links {
+  display: flex;
+  gap: 0;
+  border-top: 1px solid var(--color-border-tertiary);
+  padding-top: 1rem;
+}
+
+.port-proj-link {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+  color: var(--teal-strong);
+  text-decoration: none;
+  margin-right: 1.5rem;
+  letter-spacing: 0.04em;
+}
+
+.port-proj-link:hover {
+  text-decoration: underline;
+}
+
+.port-note {
+  max-width: 700px;
+  margin: 0;
+}
+
+.port-section-last {
+  border-bottom: 0;
+}
+
+@media (max-width: 720px) {
+  .port-page {
+    padding: 0.75rem;
+  }
+
+  .port-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+  }
+
+  .port-nav-links {
+    width: 100%;
+  }
+
+  .port-nav-link {
+    border: 1px solid var(--color-border-tertiary);
+    flex: 1;
+    text-align: center;
+  }
+
+  .port-hero,
+  .port-section {
+    padding: 1.15rem;
+  }
+
+  .port-proj-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }
