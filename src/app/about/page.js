@@ -13,7 +13,7 @@ export default function Home() {
           <h1>
             Full-stack engineer
             <br />
-            that ships <em>impactful products</em>
+            who ships <em>impactful products</em>
           </h1>
           <p className="port-hero-sub">
             I build web applications from UI to database. My work has reached
