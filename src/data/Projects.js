@@ -1,14 +1,15 @@
 export const projects = [
     {
-		meta: "2023 - PHD RESEARCH PROJECT",
+		meta: "2023 - PHD DISSERTATION",
 		title: "I Apply Math in My World",
 		description:
 			"Full-stack educational platform helping Spanish-speaking ESL students in grades 3-5 build math confidence through interactive games.",
 		highlights: [
-			"User auth with personalized content per student",
-			"Progress tracking and data collection for research",
-			"Bilingual UI designed for ESL classrooms",
-			"Server-side rendering via Next.js for fast page loads",
+		"Bilingual (English/Spanish) UI with culturally relevant mini-games",
+		"User authentication with personalized content and progress tracking per student",
+		"Text-to-speech and dyslexia-friendly font for accessibility",
+		"Prototyped an in-game chatbot using OpenAI's API",
+		"Built for and contributed to a UNC Chapel Hill doctoral dissertation (Robinson, 2025)",
 		],
 		tags: ["NEXT.JS", "MONGODB", "REST API", "AUTH", "ED-TECH"],
 		github: "https://github.com/luzeli29/iapplymath",
