@@ -12,13 +12,21 @@ export default function Home() {
           <h1>
             Full-stack engineer
             <br />
-            who ships <em>impactful products</em>
+            who delivers <em>impactful products</em>
           </h1>
           <p className="port-hero-sub">
             I build web applications from UI to database. My work has reached
             real students - helping ESL students build math confidence.
           </p>
           <div className="port-cta-row">
+
+            <a
+              href="/resume/JohnLeHouillierResume.pdf"
+              className="port-btn social"
+              download
+            >
+              RESUME
+            </a>
             <a
               href={LinkedInUrl}
               className="port-btn social"
