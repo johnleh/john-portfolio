@@ -15,8 +15,9 @@ export default function Home() {
             who delivers <em>impactful products</em>
           </h1>
           <p className="port-hero-sub">
-            I build web applications from UI to database. My work has reached
-            real students - helping ESL students build math confidence.
+            I build web applications from UI to database.
+            <br />
+            My work has reached real students, helping them build math confidence.
           </p>
           <div className="port-cta-row">
 
