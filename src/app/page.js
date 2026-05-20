@@ -20,14 +20,6 @@ export default function Home() {
             My work has reached real students, helping them build math confidence.
           </p>
           <div className="port-cta-row">
-
-            <a
-              href="/resume/JohnLeHouillierResume.pdf"
-              className="port-btn social"
-              download
-            >
-              RESUME
-            </a>
             <a
               href={LinkedInUrl}
               className="port-btn social"
