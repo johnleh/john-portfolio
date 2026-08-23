@@ -12,7 +12,7 @@ export const projects = [
 		"Built for and contributed to a UNC Chapel Hill doctoral dissertation (Robinson, 2025)",
 		],
 		tags: ["NEXT.JS", "MONGODB", "REST API", "AUTH", "ED-TECH"],
-		github: "https://github.com/luzeli29/iapplymath",
+		github: "https://github.com/johnleh/iapplymath",
 		imgSrc: ["iapply/iapply_screenshot_1.png", "iapply/iapply_screenshot_2.png"],
         learnMoreLink: "https://cdr.lib.unc.edu/concern/dissertations/q524k395x"
 	},
